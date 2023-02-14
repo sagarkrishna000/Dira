@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Nunito , sans-serif;
+    outline: none;
+}
+.page{
+    width: 100%;
+    height: 100%;
+}
+
+/*navigation bar CSS*/
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    display: block;
+    list-style: none;
+    font-size: 16px;
+    padding: 20px;
+    margin: 5px;
+    transition: color 0.3s;
+}
+.arrow{
+    font-size: 12px;
+}
+.tag{
+    text-decoration: none;
+    color: #000;
+}
+.sign{
+    list-style: none;
+    margin-left: 30px;
+    padding: 20px;
+    transition: color 0.3s;
+}
+.tag2{
+    color: #1aa1f5;
+    text-decoration: none;
+}
+.advertise{
+    list-style: none;
+    margin-left: 160px;
+    padding: 20px;
+    color: #1aa1f5;
+    transition: color 0.3s;
+}
+.logo img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+.item:hover a{
+    text-shadow: 1px 1px  #669999 ;
+    box-shadow: 0px 3px  #669999;
+    cursor: pointer;
+}
+.sign:hover a{
+    color: #4d0066;
+    text-shadow: 1.2px 1.7px #bfbff2 ;
+    box-shadow: 0px 3px  #669999;
+    cursor: pointer;
+}
+.advertise:hover a{
+    color: #4d0066;
+    text-shadow: 1.2px 1.7px #bfbff2 ;
+    box-shadow: 0px 3px  #669999;
+    cursor: pointer;
+}
+.navbar{
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/******************************** Buy drop down ****************************/
+.buy-wrapper{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 1860px;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+    z-index: 8;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.buy-wrapper-display{
+    opacity: 1;
+    visibility: visible;
+}
+.buy{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 87px;
+    margin-left: 120px;
+    display: none;
+    opacity: 0.7;
+}
+.buy li{
+    display: block;
+    list-style: none;
+    transition: background-color 0.3s;
+}
+.buy li:hover{
+    background-color: #eee;
+}
+.buy a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    width: 300px;
+    opacity: 1;
+}
+.buy i{
+    font-size: 15px;
+    margin-left: 80px;
+}
+.house{
+    font-size: 20px;
+    padding: 15px 20px;
+    padding-left: 35px;
+}
+.rent-wrapper{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 1860px;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+    z-index: 7;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.rent-wrapper-display{
+    opacity: 1;
+    visibility: visible;
+}
+.rent{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    margin-top: 87px;
+    margin-left: 225px;
+    opacity: 0.7;
+    display: none;
+}
+.rent li{
+    display: block;
+    list-style: none;
+    transition: background-color 0.3s;
+}
+.rent li:hover{
+    background-color: #eee;
+}
+.rent a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    width: 300px;
+    opacity: 1;
+}
+.rent i{
+    font-size: 15px;
+    margin-left: 80px;
+}
+.sell-wrapper{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 1860px;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+    z-index: 7;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.sell-wrapper-display{
+    opacity: 1;
+    visibility: visible;
+}
+.sell{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    margin-top: 87px;
+    margin-left: 225px;
+    opacity: 0.7;
+    display: none;
+}
+.sell li{
+    display: block;
+    list-style: none;
+    transition: background-color 0.3s;
+}
+.sell li:hover{
+    background-color: #eee;
+}
+.sell a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    width: 300px;
+    opacity: 1;
+}
+.sell i{
+    font-size: 15px;
+    margin-left: 80px;
+}
+
+/****************************End of Buy drop down *************************/
+
+/*navigation bar CSS ends*/
+
+.image{
+    z-index: -1;
+    padding-top: 1px;
+}
+.image img{
+    height: 500px;
+    width: 100%;
+    opacity: 100%;
+    position: relative;
+    text-align: center;
+    object-fit: cover;
+}
+.txt{
+    display: block;
+    color:  #66ff99;
+    text-shadow: 2px 2px #001a66;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.txt:hover{
+    cursor: pointer;
+}
+.address{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.address input{
+    width: 35rem;
+    height: 3rem;
+    border-radius: 2rem;
+    padding: 0px 25px;
+    font-size: 18px;
+    border: 1px solid #0077b3;
+    box-shadow: 1px 1px 5px #005580;
+    transition: background-color 0.3s;
+}
+.address i{
+    position: relative;
+    font-size: 25px;
+    color: #1f1f7a;
+    right: 45px;
+    top: 3px;
+}
+.address input:focus{
+    background-color: #D3D3D3;
+}
+.address i:hover{
+    text-shadow: 1.5px 2.5px #7171da;
+}
+.address input:hover{
+    border: 0.1rem solid  #004466;
+}
+.quote{
+    padding-top: 40px;
+    text-align: center;
+}
+
+/*flex-box*/
+
+.container{
+    display: flex;
+    height: 580px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.box{
+    border: 0.5px solid #d6e1e9;
+    margin: 15px;
+    padding: 30px;
+    width: 33%;
+    box-shadow: 7px 7px 7px #B0B0B0;
+    transition: all 0.2s;
+}
+.box:hover{
+    transform: scale(1.07);
+}
+.flex img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 0.1px solid ;
+    border: 0.1px solid #DCDCDC;
+}
+.caption{
+    padding: 35px;
+    text-align: center;
+    font-size: 30px;
+}
+.about{
+    text-align: center;
+}
+.btn{
+    width: 150px;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    background-color: #fff;
+    border: 0.5px solid #3333cc;
+    color: #3333cc;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #3333cc;
+    box-shadow: 4px 4px 7px #8585e0;
+}
+.popular{
+    margin-left: 75px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+.search-container{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.places{
+    height: 50px;
+    width: 250px;
+    border: 0.1px solid #B8B8B8;
+    padding: 20px;
+    margin: 20px;
+    transition: all 0.4s;
+}
+.places p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 240px;
+    transition: all 0.3s;
+}
+.places:hover{
+    text-shadow: 1px 1px  #bf80ff;
+    box-shadow: 2.5px 2.5px 8px #A9A9A9;
+}
+.places p:hover{
+    transform: scale(1.4);
+}
+.home{
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    padding: 15px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: black;
+    transition: all 0.4s;
+}
+.home:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: 0.5px 0.5px 10px #404040;
+}
+.end{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background-color: #000
+}
+.line{
+    margin: auto;
+    width: 900px;
+}
+.catalog{
+    color: #fff;
+    display: flex;
+    margin: 50px;
+    margin-left: 100px;
+}
+.details{
+    margin: 0px 50px;
+}
+.log{
+    margin-left: 500px;
+}
+.business{
+    margin-left: 420px;
+}
+.contact{
+    margin-left: 135px;
+}
+.name{
+    margin-right: 50px;
+    color: #989898;
+    text-shadow: 0.8px 0.8px #fff;
+}
+.line-end{
+    width: 1300px;
+    margin: auto;
+}
+.logo-end img{
+    width: 70px;
+    height: 70px;
+}
+.end-logo{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-name{
+    font-size: 30px;
+    color: #fff;
+}
+.copyright{
+    color: #fff;
+    margin-bottom: 15px;
+    margin-left: 7px;
+}
+.instagram{
+    font-size: 35px;
+    color: #E1306C;
+    margin-top: 21.5px;
+    padding: 15px;
+}
+.facebook{
+    font-size: 33px;
+    color: #3b5998;
+    margin-top: 21.5px;
+    padding: 15px;
+}
+.twitter{
+    font-size: 35px;
+    color: #1aa1f5;
+    margin-top: 21.5px;
+    padding: 15px;
+}
+.logo-end{
+    display: flex;
+    align-items: center;
+    transform: translate(50%);
+}
